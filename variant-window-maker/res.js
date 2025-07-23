@@ -18,7 +18,7 @@ const imgButtonOther = importImage("/files/window/spr_window_button_other.png");
 
 function importImage(path) {
     const img = new Image();
-    img.src = path;
+    img.src = "/modding-tools" + path;
     stuffToDecode.push(img);
     return img;
 }
