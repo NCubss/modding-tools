@@ -1,0 +1,176 @@
+html {
+    background-color: #dddddd;
+}
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: #eeeeee;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    text-align: center;
+    padding: 12px 0 0 0;
+    margin: 0;
+}
+hr {
+    margin: 12px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: none;
+    border-right: none;
+}
+p {
+    text-align: justify;
+}
+noscript {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    color: #ff6666;
+}
+noscript::before {
+    font-family: "Material Symbols Outlined";
+    font-size: 100%;
+    content: "error";
+    padding-right: 4px;
+}
+canvas {
+    image-rendering: pixelated;
+}
+button, select {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    outline: none;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 1),
+          inset 0 1px 2px rgba(255, 255, 255, 1);
+}
+button {
+    padding: 6px 12px;
+}
+select {
+    margin: 4px 0;
+    padding: 8px;
+    background-color: inherit;
+}
+button:active, select:open {
+    background-color: rgba(0, 0, 0, 0.01);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 1),
+          inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+button:active > * {
+    transform: translateY(1px);
+}
+.view, button:active, input, ::picker(select) {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 1),
+          inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.full {
+    display: block;
+}
+label.full {
+    margin: 8px 0px 4px 0px;
+}
+input {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 4px 0px;
+    padding: 8px;
+}
+input:focus {
+    background-color: rgba(255, 255, 255, 0.75);
+    outline: none;
+}
+input:invalid {
+    border-color: rgba(127, 0, 0, 0.4);
+    background-color: rgba(255, 245, 245, 0.5);
+}
+input:invalid:focus {
+    background-color: rgba(255, 245, 245, 0.75);
+}
+input[type=checkbox] {
+    margin: 0 8px 0 0;
+    padding: 2px;
+    scale: 1.2;
+}
+
+.nav {
+    margin: 0;
+    padding: 8px;
+    background-color: #444454;
+    overflow: hidden;
+    color: #eeeeee;
+    list-style-type: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.nav li {
+    display: inline;
+}
+.nav li p {
+    margin: 0;
+    padding: 8px 12px;
+}
+.nav li a {
+    display: block;
+    padding: 8px 12px;
+    color: #eeeeee;
+    text-decoration: none;
+}
+.nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    box-shadow: inset 0 5px 5px rgba(255, 255, 255, 0.025),
+                inset 0 -5px 5px rgba(0, 0, 0, 0.05),
+                0 2px 5px rgba(0, 0, 0, 0.025);
+}
+.nav .left {
+    float: left;
+}
+.nav .right {
+    float: right;
+}
+
+.page {
+    padding: 32px;
+}
+
+.picker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+.view {
+    display: block;
+    margin: auto;
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.options > * {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.check {
+    display: flex;
+    margin: 8px 0 4px 0;
+    flex-direction: row;
+    align-items: center;
+}
+.code {
+    font-family: monospace;
+}
+.center {
+    text-align: center;
+}
+.italic {
+    font-style: italic;
+}
