@@ -58,6 +58,9 @@ select {
     padding: 8px;
     background-color: inherit;
 }
+select:disabled {
+    opacity: 1;
+}
 button:active, select:open {
     background-color: rgba(0, 0, 0, 0.01);
     box-shadow: 0 1px 2px rgba(255, 255, 255, 1),
@@ -66,7 +69,7 @@ button:active, select:open {
 button:active > * {
     transform: translateY(1px);
 }
-.view, button:active, input, ::picker(select) {
+.view, button:active, input, select:disabled {
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     box-shadow: 0 1px 2px rgba(255, 255, 255, 1),
@@ -173,4 +176,11 @@ input[type=checkbox] {
 }
 .italic {
     font-style: italic;
+}
+.error {
+    padding: 16px;
+    border: 1px solid rgba(63, 0, 0, 0.5);
+    border-radius: 8px;
+    background-color: rgba(255, 0, 0, 0.1);
+    color: rgba(63, 0, 0, 0.75);
 }
