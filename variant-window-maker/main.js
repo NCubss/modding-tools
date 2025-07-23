@@ -189,7 +189,7 @@ function generateOptions(button) {
         const behaviorSelect = document.createElement("select");
         behaviorSelect.id = "behavior";
         behaviorSelect.className = "full";
-        behaviorSelect.disabled = customize.getElementById("selected").checked;
+        behaviorSelect.disabled = editor.data[editor.selected] < 0;
         behaviorSelect.addEventListener("change", event => {
             editor.behaviorData[editor.selected].type = event.target.value;
             behavior.textContent = "";
