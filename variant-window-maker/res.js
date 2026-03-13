@@ -1,20 +1,20 @@
 let stuffToDecode = [];
 
-const imgWindow1 = importImage("/files/window/spr_windows_1.png");
-const imgWindow2 = importImage("/files/window/spr_windows_2.png");
-const imgWindow3 = importImage("/files/window/spr_windows_3.png");
-const imgWindow4 = importImage("/files/window/spr_windows_4.png");
-const imgWindow5 = importImage("/files/window/spr_windows_5.png");
-const imgWindow6 = importImage("/files/window/spr_windows_6.png");
-const imgCards = importImage("/files/window/spr_cards_SMW.png");
-const imgButton = importImage("/files/window/spr_window_button.png");
-const imgButtonSelected = importImage("/files/window/spr_window_button_selected.png");
-const imgButtonAdd = importImage("/files/window/spr_window_button_add.png");
-const imgButtonRemove = importImage("/files/window/spr_window_button_remove.png");
-const imgButtonMushroom = importImage("/files/window/spr_window_button_mushroom.png");
-const imgButtonWings = importImage("/files/window/spr_window_button_wings.png");
-const imgButtonParachute = importImage("/files/window/spr_window_button_parachute.png");
-const imgButtonOther = importImage("/files/window/spr_window_button_other.png");
+const imgWindow1 = importImage("/modding-tools/files/window/spr_windows_1.png");
+const imgWindow2 = importImage("/modding-tools/files/window/spr_windows_2.png");
+const imgWindow3 = importImage("/modding-tools/files/window/spr_windows_3.png");
+const imgWindow4 = importImage("/modding-tools/files/window/spr_windows_4.png");
+const imgWindow5 = importImage("/modding-tools/files/window/spr_windows_5.png");
+const imgWindow6 = importImage("/modding-tools/files/window/spr_windows_6.png");
+const imgCards = importImage("/modding-tools/files/window/spr_cards_SMW.png");
+const imgButton = importImage("/modding-tools/files/window/spr_window_button.png");
+const imgButtonSelected = importImage("/modding-tools/files/window/spr_window_button_selected.png");
+const imgButtonAdd = importImage("/modding-tools/files/window/spr_window_button_add.png");
+const imgButtonRemove = importImage("/modding-tools/files/window/spr_window_button_remove.png");
+const imgButtonMushroom = importImage("/modding-tools/files/window/spr_window_button_mushroom.png");
+const imgButtonWings = importImage("/modding-tools/files/window/spr_window_button_wings.png");
+const imgButtonParachute = importImage("/modding-tools/files/window/spr_window_button_parachute.png");
+const imgButtonOther = importImage("/modding-tools/files/window/spr_window_button_other.png");
 
 function importImage(path) {
     const img = new Image();
