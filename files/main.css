@@ -55,7 +55,7 @@ button {
 }
 select {
     margin: 4px 0;
-    padding: 8px;
+    padding: 6px;
     background-color: inherit;
 }
 select:disabled {
@@ -78,7 +78,7 @@ button:active > * {
 .full {
     display: block;
 }
-label.full {
+label.full, p.full {
     margin: 8px 0px 4px 0px;
 }
 input {
@@ -149,9 +149,13 @@ input[type=checkbox] {
     justify-content: center;
     gap: 6px;
 }
-.view {
+canvas.view {
     display: block;
     margin: auto;
+}
+pre.view {
+    padding: 8px;
+    tab-size: 4;
 }
 .options {
     display: flex;
@@ -178,9 +182,21 @@ input[type=checkbox] {
     font-style: italic;
 }
 .error {
-    padding: 16px;
-    border: 1px solid rgba(63, 0, 0, 0.5);
-    border-radius: 8px;
-    background-color: rgba(255, 0, 0, 0.1);
-    color: rgba(63, 0, 0, 0.75);
+    display: block;
+    color: rgba(127, 0, 0, 0.7);
+    font-size: 0.75em;
+}
+.btngroup {
+    display: flex;
+    margin: 4px 0;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 4px;
+}
+.btngroup.left {
+    justify-content: flex-start;
+}
+.btngroup.right {
+    justify-content: flex-end;
 }

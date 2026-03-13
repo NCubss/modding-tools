@@ -11,19 +11,19 @@ const imgButton = importImage("/files/window/spr_window_button.png");
 const imgButtonSelected = importImage("/files/window/spr_window_button_selected.png");
 const imgButtonAdd = importImage("/files/window/spr_window_button_add.png");
 const imgButtonRemove = importImage("/files/window/spr_window_button_remove.png");
-const imgButtonBig = importImage("/files/window/spr_window_button_big.png");
+const imgButtonMushroom = importImage("/files/window/spr_window_button_mushroom.png");
 const imgButtonWings = importImage("/files/window/spr_window_button_wings.png");
 const imgButtonParachute = importImage("/files/window/spr_window_button_parachute.png");
 const imgButtonOther = importImage("/files/window/spr_window_button_other.png");
 
 function importImage(path) {
     const img = new Image();
-    img.src = "/modding-tools" + path;
+    img.src = path;
     stuffToDecode.push(img);
     return img;
 }
 
-window.addEventListener("load", async event => {
+$(window).on("load", async event => {
     // make sure everything is loaded first and then start app
     for (let i of stuffToDecode) {
         await i.decode();
